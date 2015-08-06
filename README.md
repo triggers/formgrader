@@ -1,2 +1,3 @@
-# formgrader
-Docker image for running nbgrader formgrade
+# compmodels/formgrader
+
+Docker image for running nbgrader formgrade.
