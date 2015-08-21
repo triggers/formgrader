@@ -1,5 +1,9 @@
 FROM ipython/scipystack
 
+# Install psychopg2
+RUN apt-get -y install libpq-dev
+RUN pip3.4 install psycopg2
+
 # Install nbgrader
 RUN pip3.4 install nbgrader
 
