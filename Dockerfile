@@ -8,7 +8,7 @@ RUN pip3.4 install psycopg2
 RUN pip3.4 install --pre nbgrader
 
 # Add nbgrader config
-ADD nbgrader_config.py /etc/ipython/nbgrader_config.py
+ADD nbgrader_config.py /etc/jupyter/nbgrader_config.py
 
 # Add the entrypoint.sh script
 ADD entrypoint.sh /srv/entrypoint.sh

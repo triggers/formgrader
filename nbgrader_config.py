@@ -11,12 +11,3 @@ c.HubAuth.hubapi_address = "jupyterhub"
 c.HubAuth.proxy_address = "jupyterhub"
 c.HubAuth.hub_address = "jupyterhub"
 c.HubAuth.connect_ip = os.environ['FORMGRADER_IP']
-
-# Add users to the grader list
-graders = set([])
-with open('/srv/formgrader/graderlist') as f:
-    for line in f:
-        if line.isspace():
-            continue
-        graders.add(line.strip())
-c.HubAuth.graders = list(graders)
