@@ -5,7 +5,7 @@ RUN apt-get -y install libpq-dev
 RUN pip3.4 install psycopg2
 
 # Install nbgrader
-RUN pip3.4 install nbgrader
+RUN pip3.4 install --pre nbgrader
 
 # Add nbgrader config
 ADD nbgrader_config.py /etc/ipython/nbgrader_config.py
