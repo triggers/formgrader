@@ -11,3 +11,4 @@ c.HubAuth.hubapi_address = "jupyterhub"
 c.HubAuth.proxy_address = "jupyterhub"
 c.HubAuth.hub_address = "jupyterhub"
 c.HubAuth.connect_ip = os.environ['FORMGRADER_IP']
+c.HubAuth.notebook_server_user = os.environ['NBGRADER_USER']

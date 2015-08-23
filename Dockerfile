@@ -5,7 +5,8 @@ RUN apt-get -y install libpq-dev
 RUN pip3.4 install psycopg2
 
 # Install nbgrader
-RUN pip3.4 install --pre nbgrader
+ADD nbgrader-0.3.0.dev-py2.py3-none-any.whl /srv/nbgrader-0.3.0.dev-py2.py3-none-any.whl
+RUN pip3.4 install /srv/nbgrader-0.3.0.dev-py2.py3-none-any.whl
 
 # Add nbgrader config
 ADD nbgrader_config.py /etc/jupyter/nbgrader_config.py
