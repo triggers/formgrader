@@ -1,6 +1,7 @@
 FROM ipython/scipystack
 
 # Install psychopg2
+RUN apt-get update
 RUN apt-get -y install libpq-dev
 RUN pip3.4 install psycopg2
 
